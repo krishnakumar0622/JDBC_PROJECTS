@@ -17,7 +17,7 @@ public class MainApplication {
 
             Scanner sc = new Scanner(System.in);
 
-            // Create tables
+           
             CreateTable CD = new CreateTable(con);
 
             CD.createCustomerTable();
@@ -25,7 +25,7 @@ public class MainApplication {
             CD.createOrderTable();
             CD.createOrderItemsTable();
 
-            // Create objects
+           
             CRUDoperations crud = new CRUDoperations(con, sc);
 
             Transcation_Management TM =
